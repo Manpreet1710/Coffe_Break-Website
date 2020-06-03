@@ -147,13 +147,14 @@ input[type="serach"]::placeholder{
     margin:auto; 
 }
 .flexbox{
-    /* display: flex;
-    justify-content: space-between; */
-}
+    display: flex;
+    justify-content: space-between;
+ }
+
 /* First Images style with content */
 .Img{
-    width:65%;
-    /* position: relative; */
+    width:62%;
+    position: relative;
 }
 .Img .heading{
    text-align: center;
@@ -187,10 +188,23 @@ input[type="serach"]::placeholder{
     border-radius: 6px;
     background: transparent;
     border:1px solid gray;
+    transition:all 0.9s;
 }
-.social_icons p{
+.btn button:hover{
+    background: var(--bg_color);
+    color:var(--txt-color);
+}
+.social_icons2{
+    display: flex;
+    justify-content: space-between;
+}
+.social_icons2 p{
     font-size: 20px;
 }
+.social_icons2 i{
+    color: var(--color);
+}
+
 /* Closed */
 
 /* ryt sidebar styling */
@@ -271,6 +285,18 @@ input[type="submit"]{
    position: relative;
    top:50px;
 }
+.imageGallery .gallery{
+    max-width:fit-content;
+}
+.gallery h1{
+    border-bottom: 3px solid rgb(13, 15, 0);
+    margin-bottom: 15px;
+    color: rgb(12, 6, 1);
+}
+.gallery h1 span{
+    color: rgb(252, 42, 5);
+    font-weight: lighter;
+}
 .flexuse{
     display: flex;
     justify-content: space-evenly;
@@ -311,6 +337,11 @@ footer .footer p{
     }
 
 /* //media quires */
+@media(min-width:200px) and (max-width:700px){
+    .btn button{
+        width: 100%;
+    }
+}
 @media (max-width: 900px){
     .navbar{
         padding: 15px 0;
@@ -319,6 +350,13 @@ footer .footer p{
     .innerDiv{
         width:80%;
     }
+    .Img{
+        width: 100%;
+    }
+    #edit{
+        width:100%;
+    }
+   
 }
 @media (max-width: 800px){
     
@@ -357,6 +395,11 @@ footer .footer p{
        display:block;
        font-size:35px;
    }
+   .image1{
+       width:100%;
+       flex-direction: column;
+       justify-content: center;
+   }
 }
 
 @media(max-width:1100px){
@@ -370,6 +413,32 @@ footer .footer p{
     }
     .left_arrow{display: none;}
     .ryt_arrow{display: none;}
+    .flexbox{
+        flex-direction: column;
+     }
+     .ryt_Sidebar{
+         width:100%;
+         margin:50px 0;
+     }
+     .ryt_Sidebar img{
+         width:100%;
+     }
+     .ryt_Sidebar button{
+         width:100%;
+     }
+     input[type="text"]{
+         width:100%;
+     }
+     .news{
+         text-align: justify;
+     }
+     .images img{
+         padding: 0;
+         clear: right;
+     }
+     .images .same{
+         font-size:16px;
+     }
 }
 
 
