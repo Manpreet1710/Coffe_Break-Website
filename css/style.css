@@ -11,23 +11,6 @@
     --bg_color:#000;
 }
 
-.popup{
-    width: 100%;
-    display: none;
-    justify-content: center;
-}
-.popup .popup_Content{
-    width:30%;
-    /* font-size: 1.2rem; */
-    box-shadow: 0 0 5px 5px rgb(211, 110, 110), 0 0 5px 5px rgb(211, 110, 110), 0 0 5px 5px rgb(211, 110, 110) ;
-    font-family: verdana;
-    margin:0 auto;
-    background: rgb(211, 110, 110);
-    padding: 25px;
-    color:#fff;
-    text-align: center;
-}
-
 html{scroll-behavior: smooth; user-select: none;}
 
 *{
