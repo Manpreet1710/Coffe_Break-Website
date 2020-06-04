@@ -34,7 +34,7 @@ inptsubmit.addEventListener('click',function(){
   inpttxt.value="";
   setTimeout(() => {
     popup.style.display="none";
-  }, 1000);
+  }, 2000);
 }
 })
 console.log(inpttxt.value);
