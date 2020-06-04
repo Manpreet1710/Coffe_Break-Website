@@ -22,19 +22,11 @@ function clck(){
 
 var inptsubmit=document.querySelector('#select');
 var inpttxt=document.querySelector('#subs');
-var popup=document.querySelector('#popup');
-var content=document.querySelector('#content');
 inptsubmit.addEventListener('click',function(){
-  // alert(inpttxt.value);
   if(inpttxt.value==""){
     alert("Please write something here");
   }else{
-  popup.style.display="flex";
-  content.innerHTML=inpttxt.value;
-  inpttxt.value="";
-  setTimeout(() => {
-    popup.style.display="none";
-  }, 2000);
-}
+  alert(inpttxt.value);
+  inpttxt.value="";}
 })
-console.log(inpttxt.value);
+// console.log(inpttxt.value);
