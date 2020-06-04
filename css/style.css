@@ -11,6 +11,22 @@
     --bg_color:#000;
 }
 
+.popup{
+    width: 100%;
+    display: none;
+    justify-content: center;
+}
+.popup .popup_Content{
+    width:100%;
+    /* font-size: 1.2rem; */
+    font-family: verdana;
+    margin:0 auto;
+    background: black;
+    padding: 25px;
+    color:#fff;
+    text-align: center;
+}
+
 html{scroll-behavior: smooth; user-select: none;}
 
 *{
@@ -339,7 +355,7 @@ footer .footer p{
 /* //media quires */
 @media(min-width:200px) and (max-width:700px){
     .btn button{
-        width: 100%;
+        width: 50%;
     }
 }
 @media (max-width: 900px){
