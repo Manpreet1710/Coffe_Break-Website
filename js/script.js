@@ -29,4 +29,4 @@ inptsubmit.addEventListener('click',function(){
   alert(inpttxt.value);
   inpttxt.value="";}
 })
-// console.log(inpttxt.value);
+///console.log(inpttxt.value);
