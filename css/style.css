@@ -284,6 +284,7 @@ input[type="submit"]{
    margin:0 auto;
    position: relative;
    top:50px;
+    animation: slider 5s linear infinite;
 }
 .imageGallery .gallery{
     max-width:fit-content;
@@ -301,20 +302,21 @@ input[type="submit"]{
     display: flex;
     justify-content: space-evenly;
 }
+
 .flexuse div img{
     border-radius: 5px;
 }
 .left_arrow{
     position: absolute;
     top:50%;
-    left:-1%;
+    left:-2%;
     opacity: .7;
     z-index: 111;
 }
 .ryt_arrow{
     position: absolute;
     top:50%;
-    right:-1%;
+    right:-2%;
     opacity: .7;
 }
 /* close */
@@ -335,6 +337,18 @@ footer .footer p{
 .toggle i{
       display: none;
     }
+
+@keyframes slider{
+    0%{
+        left:0px;
+    }
+    50%{
+        left:-70px;
+    }
+    100%{
+        left:0px;
+    }
+}
 
 /* //media quires */
 @media(min-width:200px) and (max-width:700px){
